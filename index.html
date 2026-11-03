@@ -144,6 +144,7 @@
         .time-text {
             color: var(--blue);
             font-weight: 700;
+            display: inline-block;
         }
 
         .arrow-icon {
@@ -226,6 +227,16 @@
             padding-bottom: 5px;
         }
 
+        .cash-note {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            border-right: 4px solid #ffeeba;
+        }
+
         /* Footer */
         .footer {
             text-align: center;
@@ -260,10 +271,13 @@
         </div>
         
         <div class="quick-links">
-            <a href="https://www.accuweather.com/en/it/venice/216711/weather-forecast/216711" target="_blank" class="quick-btn"><i class="fas fa-cloud-sun"></i> תחזית</a>
-            <span class="quick-btn blue"><i class="fas fa-exchange-alt"></i> יורו = 3.5 ש"ח</span>
-            <span class="quick-btn brown"><i class="fas fa-sunset"></i> שקיעה 16:30</span>
-            <span class="quick-btn"><i class="fas fa-mobile-alt"></i> אפליקציה: AVM Venezia</span>
+            <a href="https://maps.app.goo.gl/5RYMa72zdkRrgkow5?g_st=an" target="_blank" class="quick-btn"><i class="fas fa-bed"></i> לינה</a>
+            <a href="https://maps.app.goo.gl/ZgymoL5kWY1uhiDf7" target="_blank" class="quick-btn"><i class="fas fa-shopping-cart"></i> סופר</a>
+            <a href="https://maps.app.goo.gl/gGaCE8ZV5c2jFBgR9" target="_blank" class="quick-btn blue"><i class="fas fa-synagogue"></i> בית חב"ד</a>
+            <a href="https://www.accuweather.com/en/it/venice/216711/weather-forecast/216711" target="_blank" class="quick-btn brown"><i class="fas fa-cloud-sun"></i> תחזית</a>
+            <span class="quick-btn"><i class="fas fa-exchange-alt"></i> יורו = 3.5 ש"ח</span>
+            <span class="quick-btn blue"><i class="fas fa-sunset"></i> שקיעה 16:30</span>
+            <span class="quick-btn brown"><i class="fas fa-mobile-alt"></i> אפליקציה: AVM Venezia</span>
         </div>
     </header>
 
@@ -275,7 +289,7 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-plane-departure"></i>
-                    <span class="time-text">08:00 - 14:00</span>
+                    <span class="time-text" dir="ltr">08:00 - 14:00</span>
                     <span>טיסה לונציה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
@@ -291,7 +305,7 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-bus"></i>
-                    <span class="time-text">15:20</span>
+                    <span class="time-text" dir="ltr">15:20</span>
                     <span>אוטובוס משדה התעופה לונציה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
@@ -299,7 +313,7 @@
             <div class="details-content">
                 <div class="info-row"><i class="fas fa-route"></i> <span>קו 35 מהתחנה ביציאה מהשדה. כ-20 דק' נסיעה.</span></div>
                 <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות: 12 יורו לאדם.</span></div>
-                <div class="info-row"><i class="fas fa-ticket-alt"></i> <span><a href="https://webticketing.atvo.it/app/#/purchase/fromto?departureCode=67000&arrivalCode=59700&variantCode=ECOMM" target="_blank" class="nav-link">לרכישת כרטיסים</a></span></div>
+                <div class="info-row"><i class="fas fa-ticket-alt"></i> <span><a href="https://webticketing.atvo.it/app/#/purchase/fromto?departureCode=67000&arrivalCode=59700&variantCode=ECOMM" target="_blank" class="nav-link">לרכישת כרטיסים מראש</a></span></div>
                 <div class="info-row"><i class="fas fa-calendar-alt"></i> <span><a href="https://www.atvo.it/assets/bus_routes/035_01.02.26-.pdf" target="_blank" class="nav-link">לוח זמנים לאוטובוס</a></span></div>
             </div>
         </details>
@@ -308,14 +322,14 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-home"></i>
-                    <span class="time-text">15:45 - 16:30</span>
+                    <span class="time-text" dir="ltr">15:45 - 16:30</span>
                     <span>הגעה לדירה והתרעננות</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
                 <div class="info-row"><i class="fas fa-walking"></i> <span>ירידה בכיכר הגדולה בכניסה לונציה והליכה של כ-20 דק'.</span></div>
-                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/5RYMa72zdkRrgkow5?g_st=an" target="_blank" class="nav-link">ניווט לדירה</a></span></div>
+                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/5RYMa72zdkRrgkow5?g_st=an" target="_blank" class="nav-link">מיקום הדירה</a></span></div>
             </div>
         </details>
 
@@ -323,7 +337,7 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-ship"></i>
-                    <span class="time-text">16:30 - 17:15</span>
+                    <span class="time-text" dir="ltr">16:30 - 17:15</span>
                     <span>סיור שקיעה באוניה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
@@ -334,7 +348,7 @@
                 <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות: 9.5 יורו לנסיעה בודדת.</span></div>
                 <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/Z7J1siUz8PqDvBhn7" target="_blank" class="nav-link">תחנת עלייה: Ca' D'Oro ACTV</a></span></div>
                 <div class="info-row"><i class="fas fa-flag-checkered"></i> <span><a href="https://maps.app.goo.gl/gS2BSCmYQXDwHLQa7" target="_blank" class="nav-link">תחנת ירידה: S. Marco-San Zaccaria "F"</a></span></div>
-                <div class="info-row"><i class="fas fa-map"></i> <span><a href="https://maps.app.goo.gl/eELEXntb4Cbg9KBN7" target="_blank" class="nav-link">מסלול המעבורת במפה</a></span></div>
+                <div class="info-row"><i class="fas fa-map"></i> <span><a href="https://maps.app.goo.gl/eELEXntb4Cbg9KBN7" target="_blank" class="nav-link">המסלול בין התחנות</a></span></div>
             </div>
         </details>
 
@@ -342,7 +356,7 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-moon"></i>
-                    <span class="time-text">17:15 - 18:30</span>
+                    <span class="time-text" dir="ltr">17:15 - 18:30</span>
                     <span>סיור ערב רגלי</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
@@ -357,17 +371,17 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-utensils"></i>
-                    <span class="time-text">19:00 - 21:00</span>
+                    <span class="time-text" dir="ltr">19:00 - 21:00</span>
                     <span>ארוחת ערב - מסעדת גם גם</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-ship"></i> <span>מומלץ לקחת מעבורת לתחנה. קו S. Marco-San Zaccaria "B" - תחנה אחת בלבד.</span></div>
-                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/5pi18YVVGr9bsEsDA" target="_blank" class="nav-link">ניווט לתחנת העלייה (Rialto)</a></span></div>
-                <div class="info-row"><i class="fas fa-flag-checkered"></i> <span><a href="https://maps.app.goo.gl/Qj6ymXMMbJRmuTko6" target="_blank" class="nav-link">תחנת ירידה (S. Marcuola Casino)</a></span></div>
-                <div class="info-row"><i class="fas fa-store"></i> <span><a href="https://maps.app.goo.gl/XhAZjHdQ9wofsfbW6" target="_blank" class="nav-link">ניווט למסעדה</a> (כ-5 דק' הליכה מהתחנה)</span></div>
-                <div class="info-row"><i class="fas fa-bed"></i> <span>חזרה לדירה, לילה טוב!</span></div>
+                <div class="info-row"><i class="fas fa-ship"></i> <span>מומלץ לקחת מעבורת. קו S. Marco-San Zaccaria "B" - תחנה אחת בלבד.</span></div>
+                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/5pi18YVVGr9bsEsDA" target="_blank" class="nav-link">מתחנת Rialto</a></span></div>
+                <div class="info-row"><i class="fas fa-flag-checkered"></i> <span><a href="https://maps.app.goo.gl/Qj6ymXMMbJRmuTko6" target="_blank" class="nav-link">לתחנת S. Marcuola Casino</a></span></div>
+                <div class="info-row"><i class="fas fa-store"></i> <span><a href="https://maps.app.goo.gl/XhAZjHdQ9wofsfbW6" target="_blank" class="nav-link">מיקום המסעדה</a> (כ-5 דק' הליכה מהתחנה)</span></div>
+                <div class="info-row"><i class="fas fa-bed"></i> <span>חזרה לדירה, לילה טוב</span></div>
             </div>
         </details>
     </div>
@@ -380,16 +394,16 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-star-of-david"></i>
-                    <span class="time-text">09:15 - 13:00</span>
+                    <span class="time-text" dir="ltr">09:15 - 13:00</span>
                     <span>סיור בעברית בונציה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-info-circle"></i> <span>סיור רגלי מרתק על היסטוריה מקומית ויהודית. תחילת סיור: 09:30.</span></div>
-                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות: 45 יורו לאדם (20 מראש + 25 מזומן למדריך).</span></div>
-                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/GL1WeiqPrmE5eygRA" target="_blank" class="nav-link">נקודת המפגש לסיור</a> (כ-15 דק' מהדירה)</span></div>
-                <div class="info-row"><i class="fab fa-whatsapp"></i> <span><a href="https://wa.me/972544520085" target="_blank" class="nav-link">וואטסאפ למדריך</a></span></div>
+                <div class="info-row"><i class="fas fa-info-circle"></i> <span>סיור רגלי, מידע מרתק על ההיסטוריה המקומית והיהודית. תחילת סיור ב-09:30.</span></div>
+                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות 45 יורו לאחד (מקדמה 20 יורו מראש + 25 מזומן למדריך).</span></div>
+                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/GL1WeiqPrmE5eygRA" target="_blank" class="nav-link">נקודת מפגש לסיור</a> (כ-15 דק' הליכה מהדירה)</span></div>
+                <div class="info-row"><i class="fab fa-whatsapp"></i> <span><a href="https://wa.me/972544520085" target="_blank" class="nav-link">וואטסאפ למדריך (בעברית)</a></span></div>
             </div>
         </details>
 
@@ -397,13 +411,13 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-coffee"></i>
-                    <span class="time-text">13:00 - 14:00</span>
+                    <span class="time-text" dir="ltr">13:00 - 14:00</span>
                     <span>הפוגת צהריים</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-info-circle"></i> <span>התרעננות בדירה או במאפייה.</span></div>
+                <div class="info-row"><i class="fas fa-info-circle"></i> <span>התרעננות קצרה בדירה או במאפייה.</span></div>
                 <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/AseygWsQk4ug398y5" target="_blank" class="nav-link">מיקום המאפייה</a></span></div>
             </div>
         </details>
@@ -412,16 +426,16 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-synagogue"></i>
-                    <span class="time-text">14:00 - 15:30</span>
+                    <span class="time-text" dir="ltr">14:00 - 15:30</span>
                     <span>היסטוריה יהודית בגטו</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-info-circle"></i> <span>בתי כנסת עתיקים ומוזיאון חפצי קדושה.</span></div>
+                <div class="info-row"><i class="fas fa-info-circle"></i> <span>בתי כנסת עתיקים ומוזיאון חפצי קדושה ונציאנים.</span></div>
                 <div class="info-row"><i class="fas fa-clock"></i> <span>שעות פתיחה: 10:00-17:00.</span></div>
                 <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות כניסה: 18 יורו למבוגר.</span></div>
-                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/RL8Qq2FATvfSW6aF6" target="_blank" class="nav-link">ניווט למוזיאון</a></span></div>
+                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/RL8Qq2FATvfSW6aF6" target="_blank" class="nav-link">מיקום המוזיאון</a></span></div>
             </div>
         </details>
 
@@ -429,14 +443,14 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-shopping-bag"></i>
-                    <span class="time-text">16:00 - 18:00</span>
+                    <span class="time-text" dir="ltr">16:00 - 18:00</span>
                     <span>שווקים וחנויות מיוחדות</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/EBETAKZPcedSzMJX9" target="_blank" class="nav-link">רחוב אומנות ואופנה</a></span></div>
-                <div class="info-row"><i class="fas fa-store-alt"></i> <span><a href="https://maps.app.goo.gl/ccE2UVfdKfQ1YCLQ7" target="_blank" class="nav-link">שוק ריאלטו</a></span></div>
+                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/EBETAKZPcedSzMJX9" target="_blank" class="nav-link">רחוב חנויות אומנות ואופנה</a></span></div>
+                <div class="info-row"><i class="fas fa-store-alt"></i> <span><a href="https://maps.app.goo.gl/ccE2UVfdKfQ1YCLQ7" target="_blank" class="nav-link">משם לשוק ריאלטו</a></span></div>
             </div>
         </details>
 
@@ -444,13 +458,13 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-utensils"></i>
-                    <span class="time-text">18:30 - 20:30</span>
+                    <span class="time-text" dir="ltr">18:30 - 20:30</span>
                     <span>ארוחת ערב</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-info-circle"></i> <span>מסעדת גם גם או ארוחה בדירה. לילה טוב!</span></div>
+                <div class="info-row"><i class="fas fa-info-circle"></i> <span>מסעדת גם גם או בדירה. לילה טוב</span></div>
             </div>
         </details>
     </div>
@@ -463,14 +477,13 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-train"></i>
-                    <span class="time-text">07:30</span>
+                    <span class="time-text" dir="ltr">07:30</span>
                     <span>יציאה לתחנת הרכבת</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-shopping-bag"></i> <span><strong>חשוב:</strong> להצטייד מראש באוכל כשר לדרך עבור נסיעת הרכבת.</span></div>
-                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/cUhr5oAAsdTwum7h7" target="_blank" class="nav-link">תחנת רכבת Venezia Santa Lucia</a></span></div>
+                <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/cUhr5oAAsdTwum7h7" target="_blank" class="nav-link">מיקום תחנת הרכבת</a></span></div>
             </div>
         </details>
 
@@ -478,15 +491,15 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-subway"></i>
-                    <span class="time-text">08:18 - 09:46</span>
+                    <span class="time-text" dir="ltr">08:18 - 09:46</span>
                     <span>רכבת לאגם גארדה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-route"></i> <span>רכבת ישירה מ-Venezia Santa Lucia לתחנת Peschiera del Garda (שעה וחצי).</span></div>
-                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות כ-16 יורו.</span></div>
-                <div class="info-row"><i class="fas fa-ticket-alt"></i> <span><a href="https://www.trenitalia.com/en.html" target="_blank" class="nav-link">הזמנה באתר הרשמי</a></span></div>
+                <div class="info-row"><i class="fas fa-route"></i> <span>מ-Venezia Santa Lucia ל-Peschiera del Garda (רכבת ישירה, שעה וחצי).</span></div>
+                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות כ-16 יורו כרטיס בסיסי.</span></div>
+                <div class="info-row"><i class="fas fa-ticket-alt"></i> <span><a href="https://www.trenitalia.com/en.html" target="_blank" class="nav-link">הזמנה מראש באתר הרשמי</a></span></div>
             </div>
         </details>
 
@@ -494,14 +507,14 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-walking"></i>
-                    <span class="time-text">09:50 - 10:50</span>
+                    <span class="time-text" dir="ltr">09:50 - 10:50</span>
                     <span>טיול בפסקיירה דל גארדה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
                 <div class="info-row"><i class="fas fa-bridge"></i> <span><a href="https://maps.app.goo.gl/dH2M8RTJmsGjFodc8" target="_blank" class="nav-link">גשר הקשתות המפורסם</a></span></div>
-                <div class="info-row"><i class="fas fa-archway"></i> <span><a href="https://maps.app.goo.gl/8se3Rqj2riUPsYkh8" target="_blank" class="nav-link">שער המבצר</a> וטיול על המזח.</span></div>
+                <div class="info-row"><i class="fas fa-archway"></i> <span><a href="https://maps.app.goo.gl/8se3Rqj2riUPsYkh8" target="_blank" class="nav-link">שער המבצר</a> וטיול על המזח עד לתחנה.</span></div>
             </div>
         </details>
 
@@ -509,31 +522,31 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-bus-alt"></i>
-                    <span class="time-text">10:55 - 11:12</span>
+                    <span class="time-text" dir="ltr">10:55 - 11:12</span>
                     <span>אוטובוס לסרמיונה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-route"></i> <span>קו LN026 - אפיק תדיר (כל שעה). 18 דק' נסיעה.</span></div>
-                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות: 3 יורו (אשראי בנייד).</span></div>
+                <div class="info-row"><i class="fas fa-route"></i> <span>קו LN026 (כל שעה). כ-18 דק' נסיעה.</span></div>
+                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות נסיעה 3 יורו, תשלום באשראי בנייד.</span></div>
                 <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/ydDAKBMhFCCcSAWy9" target="_blank" class="nav-link">תחנת עליה: Peschiera Porto</a></span></div>
                 <div class="info-row"><i class="fas fa-flag-checkered"></i> <span><a href="https://maps.app.goo.gl/hvg9zY3jydDMrbg69" target="_blank" class="nav-link">תחנת ירידה: Sirmione - Centro</a></span></div>
-                <div class="info-row"><i class="fas fa-calendar-alt"></i> <span><a href="https://arriva.it/app/uploads/sites/6/2022/09/linea-ln026.pdf" target="_blank" class="nav-link">לוח זמני קו LN026</a></span></div>
+                <div class="info-row"><i class="fas fa-calendar-alt"></i> <span><a href="https://arriva.it/app/uploads/sites/6/2022/09/linea-ln026.pdf" target="_blank" class="nav-link">לוח זמנים של האוטובוס</a></span></div>
             </div>
         </details>
 
         <details class="schedule-details">
             <summary>
                 <div class="summary-header">
-                    <i class="fas fa-chess-rook"></i>
-                    <span class="time-text">11:15 - 15:15</span>
+                    <i class="fas fa-map-signs"></i>
+                    <span class="time-text" dir="ltr">11:15 - 15:15</span>
                     <span>טיול בסרמיונה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-castle"></i> <span><a href="https://maps.app.goo.gl/N6i6LHr2Sw8MGa28A" target="_blank" class="nav-link">טירת סרמיונה</a> (כניסה תצפית - 10 יורו, לא חובה)</span></div>
+                <div class="info-row"><i class="fas fa-chess-rook"></i> <span><a href="https://maps.app.goo.gl/N6i6LHr2Sw8MGa28A" target="_blank" class="nav-link">טירת סרמיונה</a> (עלות 10 יורו לתצפית מבפנים, לא חובה)</span></div>
                 <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/qAh3XBzGbpgQThan8" target="_blank" class="nav-link">הכיכר המרכזית</a></span></div>
                 <div class="info-row"><i class="fas fa-road"></i> <span><a href="https://maps.app.goo.gl/16jsM3LBUNgPGPsa7" target="_blank" class="nav-link">סמטאות סרמיונה הציוריות</a></span></div>
                 <div class="info-row"><i class="fas fa-water"></i> <span><a href="https://maps.app.goo.gl/JTGzw4g1bGoQHTfA9" target="_blank" class="nav-link">טיילת על האגם</a></span></div>
@@ -544,16 +557,16 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-bus-alt"></i>
-                    <span class="time-text">15:28 - 15:52</span>
-                    <span>אוטובוס חזרה לפסקיירה</span>
+                    <span class="time-text" dir="ltr">15:28 - 15:52</span>
+                    <span>נסיעה חזרה לפסקיירה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-route"></i> <span>קו LN026 (כ-24 דק' נסיעה).</span></div>
-                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות: 3 יורו (אשראי בנייד).</span></div>
+                <div class="info-row"><i class="fas fa-route"></i> <span>קו LN026 כל שעה (כ-24 דק' נסיעה).</span></div>
+                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות נסיעה 3 יורו, תשלום באשראי בנייד.</span></div>
                 <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/hvg9zY3jydDMrbg69" target="_blank" class="nav-link">תחנת עליה: Sirmione - Centro</a></span></div>
-                <div class="info-row"><i class="fas fa-flag-checkered"></i> <span><a href="https://maps.app.goo.gl/MSzTq8GQZykkDdzF7" target="_blank" class="nav-link">תחנת ירידה: Peschiera Bivio</a></span></div>
+                <div class="info-row"><i class="fas fa-flag-checkered"></i> <span><a href="https://maps.app.goo.gl/MSzTq8GQZykkDdzF7" target="_blank" class="nav-link">תחנת ירידה: Peschiera Bivio</a> (בסמוך לתחנת הרכבת)</span></div>
             </div>
         </details>
 
@@ -561,15 +574,15 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-subway"></i>
-                    <span class="time-text">16:44 - 18:14</span>
-                    <span>רכבת חזרה לונציה</span>
+                    <span class="time-text" dir="ltr">16:44 - 18:14</span>
+                    <span>נסיעת רכבת חזרה לונציה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-route"></i> <span>רכבת ישירה מפסקיירה לונציה.</span></div>
-                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות כ-11 יורו.</span></div>
-                <div class="info-row"><i class="fas fa-ticket-alt"></i> <span><a href="https://www.trenitalia.com/en.html" target="_blank" class="nav-link">הזמנה באתר הרשמי</a></span></div>
+                <div class="info-row"><i class="fas fa-route"></i> <span>רכבת ישירה מ-Peschiera del Garda ל-Venezia Santa Lucia.</span></div>
+                <div class="info-row"><i class="fas fa-money-bill"></i> <span>עלות כ-11 יורו כרטיס בסיסי.</span></div>
+                <div class="info-row"><i class="fas fa-ticket-alt"></i> <span><a href="https://www.trenitalia.com/en.html" target="_blank" class="nav-link">הזמנה מראש באתר הרשמי</a></span></div>
             </div>
         </details>
 
@@ -577,13 +590,13 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-utensils"></i>
-                    <span class="time-text">18:30 - 20:30</span>
+                    <span class="time-text" dir="ltr">18:30 - 20:30</span>
                     <span>ארוחת ערב</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-info-circle"></i> <span>מסעדת גם גם או בדירה. לילה טוב!</span></div>
+                <div class="info-row"><i class="fas fa-info-circle"></i> <span>מסעדת גם גם או בדירה. לילה טוב</span></div>
             </div>
         </details>
     </div>
@@ -596,13 +609,13 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-coffee"></i>
-                    <span class="time-text">09:30</span>
-                    <span>בוקר התארגנות</span>
+                    <span class="time-text" dir="ltr">09:30</span>
+                    <span>קפה וסנדוויצ'ים לדרך</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-bread-slice"></i> <span>קפה וסנדוויצים לדרך מהמאפייה.</span></div>
+                <div class="info-row"><i class="fas fa-bread-slice"></i> <span>מהמאפייה.</span></div>
             </div>
         </details>
 
@@ -610,7 +623,7 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-ship"></i>
-                    <span class="time-text">10:00 - 10:30</span>
+                    <span class="time-text" dir="ltr">10:00 - 10:30</span>
                     <span>נסיעה לאי מוראנו</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
@@ -626,14 +639,14 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-camera"></i>
-                    <span class="time-text">10:30 - 13:00</span>
+                    <span class="time-text" dir="ltr">10:30 - 13:00</span>
                     <span>סיור במוראנו</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-glasses"></i> <span>חנויות זכוכית, גשרים יפים, יצירות רחוב ומגדלור.</span></div>
-                <div class="info-row"><i class="fas fa-map-marked-alt"></i> <span><a href="https://maps.app.goo.gl/32UJ7aEAEVK94Aow5" target="_blank" class="nav-link">מסלול הטיול המלא באי</a></span></div>
+                <div class="info-row"><i class="fas fa-glasses"></i> <span>חנויות זכוכית, גשרים יפים, יצירות זכוכית ברחוב, מגדלור ותחנת מעבר.</span></div>
+                <div class="info-row"><i class="fas fa-map-marked-alt"></i> <span><a href="https://maps.app.goo.gl/32UJ7aEAEVK94Aow5" target="_blank" class="nav-link">המסלול המלא</a></span></div>
             </div>
         </details>
 
@@ -641,13 +654,13 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-ship"></i>
-                    <span class="time-text">13:00 - 13:45</span>
+                    <span class="time-text" dir="ltr">13:00 - 13:45</span>
                     <span>נסיעה לבוראנו</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-route"></i> <span>קו 12 Burano "C". עלות נסיעה רגילה.</span></div>
+                <div class="info-row"><i class="fas fa-route"></i> <span>קו 12 Burano "C". עלות נסיעה רגילה בונציה.</span></div>
                 <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/ynCDm26vivHVf3Fe6" target="_blank" class="nav-link">תחנת עליה: Murano Faro "A"</a></span></div>
                 <div class="info-row"><i class="fas fa-flag-checkered"></i> <span><a href="https://maps.app.goo.gl/Y5TrPwwgTinjhwR36" target="_blank" class="nav-link">תחנת ירידה: Burano "C"</a></span></div>
             </div>
@@ -657,14 +670,14 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-palette"></i>
-                    <span class="time-text">14:00 - 16:30</span>
+                    <span class="time-text" dir="ltr">14:00 - 16:30</span>
                     <span>סיור בבוראנו</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-home"></i> <span>בתים צבעוניים, גשרים קטנים והשתקפויות קסומות.</span></div>
-                <div class="info-row"><i class="fas fa-map-marked-alt"></i> <span><a href="https://maps.app.goo.gl/a4JbjykqDwtXQWhRA" target="_blank" class="nav-link">מסלול הטיול המלא באי</a></span></div>
+                <div class="info-row"><i class="fas fa-home"></i> <span>בתים צבעוניים, גשרים קטנים, השתקפות צבע קסומה.</span></div>
+                <div class="info-row"><i class="fas fa-map-marked-alt"></i> <span><a href="https://maps.app.goo.gl/a4JbjykqDwtXQWhRA" target="_blank" class="nav-link">המסלול המלא</a></span></div>
             </div>
         </details>
 
@@ -672,13 +685,13 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-ship"></i>
-                    <span class="time-text">16:30 - 17:30</span>
+                    <span class="time-text" dir="ltr">16:30 - 17:30</span>
                     <span>חזרה לונציה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-route"></i> <span>קו 12 Nove "A" לונציה.</span></div>
+                <div class="info-row"><i class="fas fa-route"></i> <span>קו 12 Nove "A" לונציה. עלות נסיעה רגילה.</span></div>
                 <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/Y5TrPwwgTinjhwR36" target="_blank" class="nav-link">תחנת עליה: Burano "C"</a></span></div>
                 <div class="info-row"><i class="fas fa-flag-checkered"></i> <span><a href="https://maps.app.goo.gl/Ebu4Y6pUEtEKc7wd7" target="_blank" class="nav-link">תחנת ירידה: F.te Nove "d"</a></span></div>
             </div>
@@ -688,97 +701,101 @@
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-suitcase-rolling"></i>
-                    <span class="time-text">17:30 - 19:30</span>
+                    <span class="time-text" dir="ltr">17:30 - 19:30</span>
                     <span>ארוחה ואריזות</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
                 <div class="info-row"><i class="fas fa-utensils"></i> <span>ארוחת ערב מוקדמת.</span></div>
-                <div class="info-row"><i class="fas fa-bed"></i> <span>אריזות ושינה מוקדמת לקראת הטיסה!</span></div>
+                <div class="info-row"><i class="fas fa-bed"></i> <span>אריזות ושינה מוקדמת לקראת הטיסה</span></div>
             </div>
         </details>
     </div>
 
     <!-- יום שישי -->
     <div class="day-card">
-        <h3 class="day-title">יום שישי 20/11 - חוזרים הביתה</h3>
+        <h3 class="day-title">יום שישי 20/11</h3>
         
         <details class="schedule-details">
             <summary>
                 <div class="summary-header">
                     <i class="fas fa-plane"></i>
-                    <span class="time-text">02:30 - 10:00</span>
-                    <span>טיסה לישראל</span>
+                    <span class="time-text" dir="ltr">02:30 - 10:00</span>
+                    <span>חזרה הביתה</span>
                 </div>
                 <i class="fas fa-chevron-down arrow-icon"></i>
             </summary>
             <div class="details-content">
-                <div class="info-row"><i class="fas fa-taxi"></i> <span>02:30 הגעה לשדה התעופה</span></div>
-                <div class="info-row"><i class="fas fa-plane-departure"></i> <span>05:30 המראה לארץ</span></div>
-                <div class="info-row"><i class="fas fa-home"></i> <span>10:00 נחיתה בישראל. ברוכים השבים!</span></div>
+                <div class="info-row"><i class="fas fa-taxi"></i> <span>02:30 הגעה לשדה</span></div>
+                <div class="info-row"><i class="fas fa-plane-departure"></i> <span>05:30 המראה</span></div>
+                <div class="info-row"><i class="fas fa-home"></i> <span>10:00 חזרה הביתה, ברוכים השבים לישראל!</span></div>
             </div>
         </details>
     </div>
 
     <!-- טבלאות מידע נלווה -->
-    <h2 class="section-title"><i class="fas fa-calculator"></i> ריכוז עלויות (ל-9 מבוגרים)</h2>
+    <h2 class="section-title"><i class="fas fa-calculator"></i> ריכוז עלויות (למבוגר אחד)</h2>
     <table class="info-table">
         <thead>
             <tr>
                 <th>שם אתר / פעילות</th>
-                <th>עלות (יורו - סה"כ)</th>
-                <th>עלות (ש"ח - סה"כ)</th>
+                <th>עלות (יורו)</th>
+                <th>עלות (ש"ח)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>אוטובוס מהשדה לונציה</td>
-                <td>€108</td>
-                <td>₪378</td>
+                <td>€12.00</td>
+                <td>₪42.00</td>
             </tr>
             <tr>
                 <td>סיור מעבורת שקיעה</td>
-                <td>€85.5</td>
-                <td>₪299</td>
+                <td>€9.50</td>
+                <td>₪33.25</td>
             </tr>
             <tr>
                 <td>סיור בעברית בונציה</td>
-                <td>€405</td>
-                <td>₪1,417</td>
+                <td>€45.00</td>
+                <td>₪157.50</td>
             </tr>
             <tr>
                 <td>מוזיאון הגטו היהודי</td>
-                <td>€162</td>
-                <td>₪567</td>
+                <td>€18.00</td>
+                <td>₪63.00</td>
             </tr>
             <tr>
                 <td>רכבת הלוך לאגם גארדה</td>
-                <td>€144</td>
-                <td>₪504</td>
+                <td>€16.00</td>
+                <td>₪56.00</td>
             </tr>
             <tr>
                 <td>אוטובוס הלוך לסרמיונה</td>
-                <td>€27</td>
-                <td>₪95</td>
+                <td>€3.00</td>
+                <td>₪10.50</td>
             </tr>
             <tr>
                 <td>טירת סרמיונה (אופציונלי)</td>
-                <td>€90</td>
-                <td>₪315</td>
+                <td>€10.00</td>
+                <td>₪35.00</td>
             </tr>
             <tr>
                 <td>אוטובוס חזור לפסקיירה</td>
-                <td>€27</td>
-                <td>₪95</td>
+                <td>€3.00</td>
+                <td>₪10.50</td>
             </tr>
             <tr>
                 <td>רכבת חזור לונציה</td>
-                <td>€99</td>
-                <td>₪347</td>
+                <td>€11.00</td>
+                <td>₪38.50</td>
             </tr>
         </tbody>
     </table>
+
+    <div class="cash-note">
+        <i class="fas fa-exclamation-circle"></i> <strong>היכן חובה מזומן:</strong> עבור הסיור בעברית (יום שלישי 17/11), חובה להביא <strong>25 יורו במזומן</strong> לאדם לתשלום היתרה ישירות למדריך בנקודת המפגש.
+    </div>
 
     <h2 class="section-title"><i class="fas fa-ship"></i> מחירון תחבורה ימית (ונציה)</h2>
     <table class="info-table">
